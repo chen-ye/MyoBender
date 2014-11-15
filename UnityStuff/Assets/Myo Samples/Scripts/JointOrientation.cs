@@ -27,9 +27,19 @@ public class JointOrientation : MonoBehaviour
     // which they are active.
     private Pose _lastPose = Pose.Unknown;
 
+	private GameObject player;
+
+	void Start () {
+		player = GameObject.Find ("Main Camera");
+		if (player == null) {
+			Debug.Log ("player is null");
+		}
+	}
+
     // Update is called once per frame.
     void Update ()
     {
+
         // Access the ThalmicMyo component attached to the Myo object.
 
 		ThalmicMyo thalmicMyo = myo.GetComponent<ThalmicMyo> ();
@@ -91,7 +101,27 @@ public class JointOrientation : MonoBehaviour
                                                 transform.localRotation.z,
                                                 -transform.localRotation.w);
         }
+
+		Vector3 normalize_forward = new Vector3(myo.transform.forward.x, myo.transform.forward.y, myo.transform.forward.y/5);
+
+		transform.Translate (normalize_forward/50);
+		print (normalize_forward);
+
+		//transform.RotateAround (player.transform.position, Vector3.up, Vector3.Angle(myo.transform.position, myo.transform.forward));
     }
+
+	float normalize_x (float x) 
+	{
+		return x;
+	}
+	
+	float normalize_y (float y) {
+		return y;
+	}
+	
+	float normalize_z (float z) {
+		return z;
+	}
     
     // Compute the angle of rotation clockwise about the forward axis relative to the provided zero roll direction.
     // As the armband is rotated about the forward axis this value will change, regardless of which way the
