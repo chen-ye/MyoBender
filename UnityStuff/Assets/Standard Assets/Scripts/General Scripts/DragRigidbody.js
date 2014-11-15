@@ -5,7 +5,19 @@ var angularDrag = 5.0;
 var distance = 0.2;
 var attachToCenterOfMass = false;
 
+private var mainCamera : Camera;
+private var screenMiddle : Vector3;
+
+
 private var springJoint : SpringJoint;
+
+
+function Awake () 
+{
+mainCamera = FindCamera();
+screenMiddle = Vector3(mainCamera.pixelWidth/2,mainCamera.pixelHeight/2, 0);
+
+}
 
 function Update ()
 {
@@ -13,11 +25,11 @@ function Update ()
 	if (!Input.GetMouseButtonDown (0))
 		return;
 
-	var mainCamera = FindCamera();
+	mainCamera = FindCamera();
 		
 	// We need to actually hit an object
 	var hit : RaycastHit;
-	if (!Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition),  hit, 100))
+	if (!Physics.Raycast(mainCamera.ScreenPointToRay(screenMiddle),  hit, 100)) //Input.mousePosition),  hit, 100))
 		return;
 	// We need to hit a rigidbody that is not kinematic
 	if (!hit.rigidbody || hit.rigidbody.isKinematic)
@@ -60,7 +72,7 @@ function DragObject (distance : float)
 	var mainCamera = FindCamera();
 	while (Input.GetMouseButton (0))
 	{
-		var ray = mainCamera.ScreenPointToRay (Input.mousePosition);
+		var ray = mainCamera.ScreenPointToRay (screenMiddle);
 		springJoint.transform.position = ray.GetPoint(distance);
 		yield;
 	}

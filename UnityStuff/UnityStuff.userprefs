@@ -1,17 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GravPoint.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Scripts\General Scripts\DragRigidbody.js">
     <Files>
-      <File FileName="Assets\Myo Samples\Scripts\JointOrientation.cs" Line="49" Column="40" />
-      <File FileName="Assets\Myo\Scripts\Myo.NET\Myo.cs" Line="18" Column="14" />
+      <File FileName="Assets\Standard Assets\Scripts\General Scripts\DragRigidbody.js" Line="75" Column="54" />
+      <File FileName="Assets\Myo Samples\Scripts\JointOrientation.cs" Line="1" Column="1" />
+      <File FileName="Assets\Myo\Scripts\Myo.NET\Myo.cs" Line="1" Column="1" />
       <File FileName="Assets\Myo\Scripts\Myo.NET\libmyo.cs" Line="1" Column="1" />
-      <File FileName="Assets\Myo Samples\Scripts\SampleSceneGUI.cs" Line="18" Column="5" />
-      <File FileName="Assets\Myo\Scripts\Myo.NET\Hub.cs" Line="22" Column="15" />
-      <File FileName="Assets\Myo\Scripts\ThalmicMyo.cs" Line="103" Column="50" />
+      <File FileName="Assets\Myo Samples\Scripts\SampleSceneGUI.cs" Line="1" Column="1" />
+      <File FileName="Assets\Myo\Scripts\Myo.NET\Hub.cs" Line="1" Column="1" />
+      <File FileName="Assets\Myo\Scripts\ThalmicMyo.cs" Line="1" Column="1" />
       <File FileName="Assets\Myo\Scripts\Myo.NET\Properties\AssemblyInfo.cs" Line="1" Column="1" />
-      <File FileName="Assets\Myo\Scripts\Myo.NET\EventTypes.cs" Line="37" Column="26" />
-      <File FileName="Assets\Myo\Scripts\ThalmicHub.cs" Line="107" Column="46" />
-      <File FileName="Assets\Scripts\GravPoint.cs" Line="17" Column="3" />
+      <File FileName="Assets\Myo\Scripts\Myo.NET\EventTypes.cs" Line="1" Column="1" />
+      <File FileName="Assets\Myo\Scripts\ThalmicHub.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GravPoint.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
