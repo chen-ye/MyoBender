@@ -46,20 +46,27 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NewBehaviourScript.js" />
-     <Compile Include="Assets\Scripts\LaunchFireball.js" />
-     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
+     <Compile Include="Assets\Particles\Legacy Particles\TimedObjectDestructor.js" />
+     <Compile Include="Assets\Scripts\Camera Scripts\MouseOrbit.js" />
+     <Compile Include="Assets\Scripts\Camera Scripts\SmoothFollow.js" />
+     <Compile Include="Assets\Scripts\Camera Scripts\SmoothLookAt.js" />
+     <Compile Include="Assets\Scripts\Character\CharacterMotor.js" />
+     <Compile Include="Assets\Scripts\Character\FPSInputController.js" />
+     <Compile Include="Assets\Scripts\Character\PlatformInputController.js" />
+     <Compile Include="Assets\Scripts\Character\ThirdPersonCamera.js" />
+     <Compile Include="Assets\Scripts\Character\ThirdPersonController.js" />
+     <Compile Include="Assets\Scripts\Death.js" />
+     <Compile Include="Assets\Scripts\DragRigidbody.js" />
+     <Compile Include="Assets\Scripts\FireProjectile.js" />
+     <Compile Include="Assets\Scripts\Waterness.js" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
-     <None Include="Assets\Myo\README-MyoUnity.txt" />
-     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Shaders\WaterElement.shader" />
+     <None Include="Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{BFBEE8A6-04E1-BF8D-324C-E82BE2FF9169}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
       <Project>{B3C1F8B0-A0B1-62DF-6231-4D7ACFFA6004}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
