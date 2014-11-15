@@ -80,7 +80,6 @@ public class ThalmicHub : MonoBehaviour
             Transform child = transform.GetChild (i);
 
             var myo = child.gameObject.GetComponent<ThalmicMyo> ();
-			Debug.Log (myo);
             if (myo != null) {
                 _myos.Add(myo);
             }
@@ -137,10 +136,7 @@ public class ThalmicHub : MonoBehaviour
 
     void hub_MyoPaired (object sender, Thalmic.Myo.MyoEventArgs e)
     {
-		//Debug.Log (.Keys.);
-		e.Myo.Vibrate (Thalmic.Myo.VibrationType.Medium);
-
-		foreach (ThalmicMyo myo in _myos) {
+        foreach (ThalmicMyo myo in _myos) {
             if (myo.internalMyo == null) {
                 myo.internalMyo = e.Myo;
                 break;
@@ -152,5 +148,5 @@ public class ThalmicHub : MonoBehaviour
 
     private Thalmic.Myo.Hub _hub = null;
 
-    public List<ThalmicMyo> _myos = new List<ThalmicMyo>();
+    private List<ThalmicMyo> _myos = new List<ThalmicMyo>();
 }

@@ -15,8 +15,7 @@ public class SampleSceneGUI : MonoBehaviour
         GUI.skin.label.fontSize = 20;
 
         ThalmicHub hub = ThalmicHub.instance;
-		//Debug.Log (hub._myos.Count);
-		
+
         // Access the ThalmicMyo script attached to the Myo object.
         ThalmicMyo thalmicMyo = myo.GetComponent<ThalmicMyo> ();
 
@@ -29,9 +28,9 @@ public class SampleSceneGUI : MonoBehaviour
             GUI.Label(new Rect (12, 8, Screen.width, Screen.height),
                 "No Myo currently paired."
             );
-        } else if (!thalmicMyo.armSynced) {
+        } else if (!thalmicMyo.armRecognized) {
             GUI.Label(new Rect (12, 8, Screen.width, Screen.height),
-                "Perform the Sync Gesture."
+                "Perform the Setup Gesture."
             );
         } else {
             GUI.Label (new Rect (12, 8, Screen.width, Screen.height),

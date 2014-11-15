@@ -23,9 +23,9 @@ namespace Thalmic.Myo
 
         public event EventHandler<MyoEventArgs> Disconnected;
 
-        public event EventHandler<ArmSyncedEventArgs> ArmSynced;
+        public event EventHandler<ArmRecognizedEventArgs> ArmRecognized;
 
-        public event EventHandler<MyoEventArgs> ArmUnsynced;
+        public event EventHandler<MyoEventArgs> ArmLost;
 
         public event EventHandler<PoseEventArgs> PoseChange;
 
@@ -75,20 +75,20 @@ namespace Thalmic.Myo
                     }
                     break;
 
-                case libmyo.EventType.ArmSynced:
-                    if (ArmSynced != null)
+                case libmyo.EventType.ArmRecognized:
+                    if (ArmRecognized != null)
                     {
                         Arm arm = (Arm)libmyo.event_get_arm(evt);
                         XDirection xDirection = (XDirection)libmyo.event_get_x_direction(evt);
 
-                        ArmSynced(this, new ArmSyncedEventArgs(this, timestamp, arm, xDirection));
+                        ArmRecognized(this, new ArmRecognizedEventArgs(this, timestamp, arm, xDirection));
                     }
                     break;
 
-                case libmyo.EventType.ArmUnsynced:
-                    if (ArmUnsynced != null)
+                case libmyo.EventType.ArmLost:
+                    if (ArmLost != null)
                     {
-                        ArmUnsynced(this, new MyoEventArgs(this, timestamp));
+                        ArmLost(this, new MyoEventArgs(this, timestamp));
                     }
                     break;
 

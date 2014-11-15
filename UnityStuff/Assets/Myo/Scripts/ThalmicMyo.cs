@@ -12,7 +12,7 @@ using Pose = Thalmic.Myo.Pose;
 public class ThalmicMyo : MonoBehaviour {
 
     // True if and only if Myo has detected that it is on an arm.
-    public bool armSynced;
+    public bool armRecognized;
 
     // The current arm that Myo is being worn on. An arm of Unknown means that Myo is unable to detect the arm
     // (e.g. because it's not currently being worn).
@@ -50,7 +50,7 @@ public class ThalmicMyo : MonoBehaviour {
 
     void Update() {
         lock (_lock) {
-            armSynced = _myoArmSynced;
+            armRecognized = _myoArmRecognized;
             arm = _myoArm;
             xDirection = _myoXDirection;
             if (_myoQuaternion != null) {
@@ -66,17 +66,17 @@ public class ThalmicMyo : MonoBehaviour {
         }
     }
 
-    void myo_OnArmSync(object sender, Thalmic.Myo.ArmSyncedEventArgs e) {
+    void myo_OnArmRecognized(object sender, Thalmic.Myo.ArmRecognizedEventArgs e) {
         lock (_lock) {
-            _myoArmSynced = true;
+            _myoArmRecognized = true;
             _myoArm = e.Arm;
             _myoXDirection = e.XDirection;
         }
     }
 
-    void myo_OnArmUnsync(object sender, Thalmic.Myo.MyoEventArgs e) {
+    void myo_OnArmLost(object sender, Thalmic.Myo.MyoEventArgs e) {
         lock (_lock) {
-            _myoArmSynced = false;
+            _myoArmRecognized = false;
             _myoArm = Arm.Unknown;
             _myoXDirection = XDirection.Unknown;
         }
@@ -110,8 +110,8 @@ public class ThalmicMyo : MonoBehaviour {
         get { return _myo; }
         set {
             if (_myo != null) {
-                _myo.ArmSynced -= myo_OnArmSync;
-                _myo.ArmUnsynced -= myo_OnArmUnsync;
+                _myo.ArmRecognized -= myo_OnArmRecognized;
+                _myo.ArmLost -= myo_OnArmLost;
                 _myo.OrientationData -= myo_OnOrientationData;
                 _myo.AccelerometerData -= myo_OnAccelerometerData;
                 _myo.GyroscopeData -= myo_OnGyroscopeData;
@@ -119,8 +119,8 @@ public class ThalmicMyo : MonoBehaviour {
             }
             _myo = value;
             if (value != null) {
-                value.ArmSynced += myo_OnArmSync;
-                value.ArmUnsynced += myo_OnArmUnsync;
+                value.ArmRecognized += myo_OnArmRecognized;
+                value.ArmLost += myo_OnArmLost;
                 value.OrientationData += myo_OnOrientationData;
                 value.AccelerometerData += myo_OnAccelerometerData;
                 value.GyroscopeData += myo_OnGyroscopeData;
@@ -131,7 +131,7 @@ public class ThalmicMyo : MonoBehaviour {
 
     private Object _lock = new Object();
 
-    private bool _myoArmSynced = false;
+    private bool _myoArmRecognized = false;
     private Arm _myoArm = Arm.Unknown;
     private XDirection _myoXDirection = XDirection.Unknown;
     private Thalmic.Myo.Quaternion _myoQuaternion = null;

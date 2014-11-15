@@ -85,8 +85,8 @@ namespace Thalmic.Myo
             Unpaired,
             Connected,
             Disconnected,
-            ArmSynced,
-            ArmUnsynced,
+            ArmRecognized,
+            ArmLost,
             Orientation,
             Pose,
             Rssi

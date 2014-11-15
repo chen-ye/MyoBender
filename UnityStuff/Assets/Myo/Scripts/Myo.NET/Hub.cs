@@ -19,7 +19,7 @@ namespace Thalmic.Myo
         private Thread _eventThread;
         private bool _eventThreadShutdown = false;
 
-        public Dictionary<IntPtr, Myo> _myos = new Dictionary<IntPtr, Myo>();
+        private Dictionary<IntPtr, Myo> _myos = new Dictionary<IntPtr, Myo>();
 
         public Hub(string applicationIdentifier, EventHandler<MyoEventArgs> OnPaired)
         {
