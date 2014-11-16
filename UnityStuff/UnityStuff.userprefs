@@ -1,12 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Microsoft\Kinect\DiscreteGestureBasics-XAML\MainPage.xaml.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ForcePoint.cs">
     <Files>
-<<<<<<< HEAD
-      <File FileName="Assets\Standard Assets\Microsoft\Kinect\DiscreteGestureBasics-XAML\MainPage.xaml.cs" Line="18" Column="1" />
-=======
-      <File FileName="Assets\Scripts\FireElement.js" Line="87" Column="58" />
->>>>>>> 3b724d908667d53425e13d761b89e5ec3bb3bde8
+      <File FileName="Assets\Scripts\ForcePoint.cs" Line="14" Column="89" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
