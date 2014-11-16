@@ -46,11 +46,25 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Myo Samples\Scripts\ColorBoxByPose.cs" />
+     <Compile Include="Assets\Myo Samples\Scripts\JointOrientation.cs" />
+     <Compile Include="Assets\Myo Samples\Scripts\SampleSceneGUI.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\EventTypes.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Hub.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Myo.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Pose.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Quaternion.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\Vector3.cs" />
+     <Compile Include="Assets\Myo\Scripts\Myo.NET\libmyo.cs" />
+     <Compile Include="Assets\Myo\Scripts\ThalmicHub.cs" />
+     <Compile Include="Assets\Myo\Scripts\ThalmicMyo.cs" />
      <Compile Include="Assets\Scripts\Character\MouseLook.cs" />
      <Compile Include="Assets\Scripts\ForcePoint.cs" />
      <Compile Include="Assets\Scripts\General Scripts\ActivateTrigger.cs" />
      <Compile Include="Assets\Scripts\MeshBuilder.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Myo\README-MyoUnity.txt" />
      <None Include="Assets\Shaders\WaterElement.shader" />
      <None Include="Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="UnityEngine.UI">
