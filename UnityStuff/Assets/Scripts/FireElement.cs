@@ -46,8 +46,9 @@ public class FireElement : MonoBehaviour {
 	void Update () {
 		if (thalmicMyo.pose != _lastPose) {
 			_lastPose = thalmicMyo.pose;
+			print (thalmicMyo.name + " pose: " + thalmicMyo.pose);
 			
-			if (thalmicMyo.pose == Pose.FingersSpread) {
+			if (thalmicMyo.pose == Pose.FingersSpread || thalmicMyo.pose == Pose.WaveIn) {
 				drawMyo = true;
 			}
 			if (thalmicMyo.pose == Pose.Fist) {
