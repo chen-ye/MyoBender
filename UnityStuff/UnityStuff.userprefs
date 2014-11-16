@@ -1,21 +1,10 @@
 ﻿<Properties>
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FireElement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Waterness.js">
     <Files>
       <File FileName="Assets\Myo Samples\Scripts\JointOrientation.cs" Line="85" Column="100" />
-      <File FileName="Assets\Scripts\Waterness.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FireElement.cs" Line="113" Column="9" />
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RockSelector.js">
-    <Files>
-      <File FileName="Assets\Scripts\FireElement.cs" Line="23" Column="34" />
-      <File FileName="Assets\Scripts\RockSelector.js" Line="21" Column="40" />
-      <File FileName="Assets\Scripts\MeshBuilder.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Death.js" Line="8" Column="26" />
-      <File FileName="Assets\Scripts\DragRigidbody.js" Line="28" Column="19" />
->>>>>>> aafac5193be24f59e426bffccc15125bf8f9a599
+      <File FileName="Assets\Scripts\Waterness.js" Line="18" Column="42" />
+      <File FileName="Assets\Scripts\FireElement.cs" Line="113" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
