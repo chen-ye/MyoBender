@@ -82,10 +82,8 @@ function fireEarth() {
 function chargeEarth() {
 	rock = true;
 	projectile = Instantiate(earthProjectile, transform.position + transform.TransformDirection((Vector3.forward * 4) + (Vector3.down * 2)), transform.rotation);
-	//projectile.collider.active = false;
+	this.gameObject.Find("ForcePoint").SetActive(true);
 	projectile.AddForce (Vector3.up * earthVelocity * 5000);
-	//yield new WaitForSeconds(0.5);
-	//projectile.collider.active = true;
 }
 
 function fireWater() {

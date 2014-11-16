@@ -2,7 +2,6 @@
 
 function Start () {
 	var n : int = Random.Range(1, 20);
-	print(n);
 	var mesh : Mesh;
 	var children : Component[] = this.GetComponentsInChildren(Transform, false);
 	print(children.Length);

@@ -1,14 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SwitchElement.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FireElement.js">
     <Files>
-      <File FileName="Assets\Scripts\FireProjectile.js" Line="3" Column="12" />
+      <File FileName="Assets\Scripts\FireElement.js" Line="91" Column="13" />
+      <File FileName="Assets\Scripts\FireProjectile.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Death.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Waterness.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\RockSelector.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FireElement.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FireElement.js" Line="104" Column="2" />
       <File FileName="Assets\Standard Assets\Windows\Kinect\Joint.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SwitchElement.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

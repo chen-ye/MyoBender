@@ -3,7 +3,6 @@ private var motor : CharacterMotor;
 // Use this for initialization
 function Awake () {
 	motor = GetComponent(CharacterMotor);
-	Screen.showCursor = false;
 }
 
 // Update is called once per frame
