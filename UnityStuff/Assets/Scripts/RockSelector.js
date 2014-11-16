@@ -18,7 +18,8 @@ function Update () {
 }
 
 function OnCollisionEnter (col : Collision) {
-	if (col.relativeVelocity.magnitude > 2){
-		Destroy(col.rigidbody);
+	print(col.relativeVelocity.magnitude);
+	if (col.relativeVelocity.magnitude > 10) {
+			Destroy(this);
 	}
 }
