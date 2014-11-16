@@ -1,13 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FireElement.js">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Microsoft\Kinect\DiscreteGestureBasics-XAML\MainPage.xaml.cs">
     <Files>
-      <File FileName="Assets\Myo Samples\Scripts\JointOrientation.cs" Line="4" Column="31" />
-      <File FileName="Assets\Scripts\FireElement.js" Line="2" Column="1" />
-      <File FileName="Assets\Scripts\Death.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\RockSelector.js" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Windows\Kinect\Joint.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ForcePoint.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Microsoft\Kinect\DiscreteGestureBasics-XAML\MainPage.xaml.cs" Line="18" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
