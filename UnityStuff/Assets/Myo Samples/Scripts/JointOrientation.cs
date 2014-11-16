@@ -38,7 +38,7 @@ public class JointOrientation : MonoBehaviour
         if (thalmicMyo.pose != _lastPose) {
             _lastPose = thalmicMyo.pose;
 
-            if (thalmicMyo.pose == Pose.FingersSpread) {
+			if (thalmicMyo.pose == Pose.FingersSpread || thalmicMyo.pose == Pose.ThumbToPinky) {
                 updateReference = true;
             }
         }
