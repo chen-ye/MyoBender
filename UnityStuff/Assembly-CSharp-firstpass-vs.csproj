@@ -54,6 +54,9 @@
      <Compile Include="Assets\Standard Assets\KinectBuffer.cs" />
      <Compile Include="Assets\Standard Assets\KinectSpecialCases.cs" />
      <Compile Include="Assets\Standard Assets\KinectVisualGestureBuilderSpecialCases.cs" />
+     <Compile Include="Assets\Standard Assets\Microsoft\Kinect\DiscreteGestureBasics-XAML\GestureDetector.cs" />
+     <Compile Include="Assets\Standard Assets\Microsoft\Kinect\DiscreteGestureBasics-XAML\MainPage.xaml.cs" />
+     <Compile Include="Assets\Standard Assets\Microsoft\Kinect\DiscreteGestureBasics-XAML\Properties\AssemblyInfo.cs" />
      <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\ContinuousGestureResult.cs" />
      <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\DiscreteGestureResult.cs" />
      <Compile Include="Assets\Standard Assets\Microsoft\Kinect\VisualGestureBuilder\Gesture.cs" />
