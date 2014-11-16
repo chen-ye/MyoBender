@@ -18,9 +18,9 @@ function OnTriggerEnter(collider : Collider) {
 				emitters[i].particleEmitter.emit = false;
 			}
 		}
-		var psystem : ParticleSystem = this.gameObject.GetComponentInChildren(ParticleSystem).particleSystem;
+		var psystem : Component = this.gameObject.GetComponentInChildren(ParticleSystem);
 		if (psystem != null) {
-			psystem.enableEmission = false;
+			psystem.particleSystem.enableEmission = false;
 		}
 	}
 }

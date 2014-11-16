@@ -56,7 +56,6 @@
      <Compile Include="Assets\Scripts\Character\ThirdPersonController.js" />
      <Compile Include="Assets\Scripts\Death.js" />
      <Compile Include="Assets\Scripts\DragRigidbody.js" />
-     <Compile Include="Assets\Scripts\FireElement.js" />
      <Compile Include="Assets\Scripts\RockSelector.js" />
      <Compile Include="Assets\Scripts\Waterness.js" />
      <None Include="Assets\Plugins\donotdelete.txt" />

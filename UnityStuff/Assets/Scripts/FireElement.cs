@@ -13,6 +13,8 @@ public class FireElement : MonoBehaviour {
 	public Rigidbody fireProjectile;
 	public Rigidbody earthProjectile;
 	public Rigidbody waterProjectile;
+
+	public CharacterController trust;
 	
 	private Rigidbody projectile;
 	private int activeElement = 2;
@@ -70,7 +72,7 @@ public class FireElement : MonoBehaviour {
 			fireMyo = false;
 			switch(activeElement) {
 			case 1:
-				//fireAir();
+				fireAir();
 				break;
 			case 2:
 				fireFire();
@@ -102,6 +104,13 @@ public class FireElement : MonoBehaviour {
 		}
 
 
+	}
+
+	void fireAir() {
+		Rigidbody clone;
+		clone = (Rigidbody) Instantiate(airProjectile, transform.position + transform.TransformDirection(Vector3.forward * (float) 0.5), transform.rotation);
+		clone.AddForce(transform.TransformDirection (Vector3.forward * airVelocity * 500000));
+		//trust.AddImpact (transform.TransformDirection (Vector3.back * airVelocity * 50000));
 	}
 
 	void fireFire() {

@@ -76,6 +76,10 @@ public class JointOrientation : MonoBehaviour
         // antiRoll represents a rotation about the myo Armband's forward axis adjusting for reference roll.
         Quaternion antiRoll = Quaternion.AngleAxis (relativeRoll, myo.transform.forward);
 
+		if (float.IsNaN (antiRoll.w + antiRoll.x + antiRoll.y + antiRoll.z)) {
+			return;
+		}
+
         // Here the anti-roll and yaw rotations are applied to the myo Armband's forward direction to yield
         // the orientation of the joint.
         transform.rotation = _antiYaw * antiRoll * Quaternion.LookRotation (myo.transform.forward);
