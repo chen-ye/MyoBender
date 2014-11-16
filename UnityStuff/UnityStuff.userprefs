@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FireElement.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RockSelector.js">
     <Files>
-      <File FileName="Assets\Scripts\FireElement.js" Line="87" Column="58" />
+      <File FileName="Assets\Scripts\FireElement.cs" Line="143" Column="2" />
+      <File FileName="Assets\Scripts\RockSelector.js" Line="22" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

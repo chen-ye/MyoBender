@@ -122,6 +122,7 @@ public class FireElement : MonoBehaviour {
 		projectile = (Rigidbody) Instantiate(earthProjectile, transform.position + transform.TransformDirection((Vector3.forward * 4) + (Vector3.down * 2)), transform.rotation);
 		//this.gameObject.Find("ForcePoint").SetActive(true);
 		projectile.AddForce (Vector3.up * earthVelocity * 5000);
+		projectile.collisionDetectionMode = CollisionDetectionMode.Continuous;
 	}
 	
 	void fireWater() {
@@ -138,5 +139,9 @@ public class FireElement : MonoBehaviour {
 		//yield new WaitForSeconds(0.5);
 		//projectile.collider.active = true;
 	}
+
+
+
+
 }
 
