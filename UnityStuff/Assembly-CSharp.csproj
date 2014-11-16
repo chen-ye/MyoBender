@@ -60,6 +60,7 @@
      <Compile Include="Assets\Myo\Scripts\ThalmicHub.cs" />
      <Compile Include="Assets\Myo\Scripts\ThalmicMyo.cs" />
      <Compile Include="Assets\Scripts\Character\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\FireElement.cs" />
      <Compile Include="Assets\Scripts\ForcePoint.cs" />
      <Compile Include="Assets\Scripts\General Scripts\ActivateTrigger.cs" />
      <Compile Include="Assets\Scripts\MeshBuilder.cs" />

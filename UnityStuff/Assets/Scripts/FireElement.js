@@ -18,6 +18,7 @@ private var air : boolean = false;
 private var water : boolean = false;
 
 function Update() {
+	
 	if (Input.GetKeyDown("1")) {
 		activeElement = 1;
 	}
