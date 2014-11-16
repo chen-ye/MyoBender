@@ -46,14 +46,28 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
-     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
-     <Compile Include="Assets\Standard Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
-     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
+     <Compile Include="Assets\Standard Assets\INativeWrapper.cs" />
+     <Compile Include="Assets\Standard Assets\NativeWrapper.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Data\PropertyChangedEventArgs.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\Appearance.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\AudioBeamFrameReference.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\BodyFrame.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\BodyFrameReference.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\BodyIndexFrameReader.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\ColorFrameReference.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\DepthFrame.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\DepthFrameReader.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\Expression.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\FrameCapturedEventArgs.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\InfraredFrameReader.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\JointType.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\Kinect\MultiSourceFrameArrivedEventArgs.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\KinectView\Scripts\BodySourceManager.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\KinectView\Scripts\DepthSourceManager.cs" />
+     <Compile Include="Assets\Standard Assets\Windows\KinectView\Scripts\DepthSourceView.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
-     <None Include="Assets\Myo\README-MyoUnity.txt" />
-     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Shaders\WaterElement.shader" />
+     <None Include="Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
