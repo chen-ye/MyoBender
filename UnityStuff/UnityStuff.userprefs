@@ -2,7 +2,11 @@
   <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Microsoft\Kinect\DiscreteGestureBasics-XAML\MainPage.xaml.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets\Standard Assets\Microsoft\Kinect\DiscreteGestureBasics-XAML\MainPage.xaml.cs" Line="18" Column="1" />
+=======
+      <File FileName="Assets\Scripts\FireElement.js" Line="87" Column="58" />
+>>>>>>> 3b724d908667d53425e13d761b89e5ec3bb3bde8
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Standard Assets\CameraIntrinsics.cs" />
      <Compile Include="Assets\Standard Assets\CollectionMap.cs" />
      <Compile Include="Assets\Standard Assets\ExceptionHelper.cs" />
      <Compile Include="Assets\Standard Assets\INativeWrapper.cs" />
@@ -54,13 +53,8 @@
      <Compile Include="Assets\Standard Assets\NativeWrapper.cs" />
      <Compile Include="Assets\Standard Assets\SmartGCHandle.cs" />
      <Compile Include="Assets\Standard Assets\ThreadSafeDictionary.cs" />
-     <None Include="Assets\Plugins\donotdelete.txt" />
-     <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
      <None Include="Assets\Myo\README-MyoUnity.txt" />
-     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
-     <None Include="Assets\Plugins\x86\donotdelete.txt" />
      <None Include="Assets\Shaders\WaterElement.shader" />
      <None Include="Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="UnityEngine.UI">
