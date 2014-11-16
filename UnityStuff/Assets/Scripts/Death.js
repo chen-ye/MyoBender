@@ -16,7 +16,6 @@ function Update () {
 }
 
 function destroy() {
-	print("destroyed");
 	destroyed = true;
 	var emitters : Component[] = this.gameObject.GetComponentsInChildren(ParticleEmitter, false);
 	if (emitters != null) {

@@ -9,8 +9,8 @@ function Update () {
 }
 
 function OnTriggerEnter(collider : Collider) {
-	Debug.Log("Name is " + collider.gameObject.name + "!");
-	Debug.Log(collider.tag);
+	//Debug.Log("Name is " + collider.gameObject.name + "!");
+	//Debug.Log(collider.tag);
 	if(collider.gameObject.name == "Fireball(Clone)") {	
 		var emitters : Component[] = collider.gameObject.GetComponentsInChildren(ParticleEmitter, false);
 		if (emitters != null) {
