@@ -57,18 +57,15 @@
      <Compile Include="Assets\Scripts\Character\ThirdPersonController.js" />
      <Compile Include="Assets\Scripts\Death.js" />
      <Compile Include="Assets\Scripts\DragRigidbody.js" />
-     <Compile Include="Assets\Scripts\FireEarthProjectile.js" />
      <Compile Include="Assets\Scripts\FireElement.js" />
-     <Compile Include="Assets\Scripts\FireProjectile.js" />
      <Compile Include="Assets\Scripts\RockSelector.js" />
-     <Compile Include="Assets\Scripts\SwitchElement.js" />
      <Compile Include="Assets\Scripts\Waterness.js" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Myo\README-MyoUnity.txt" />
      <None Include="Assets\Shaders\WaterElement.shader" />
      <None Include="Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/ariel_000/Documents/GitHub/MyoBender/UnityStuff/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>C:/Users/Chen Ye/Documents/GitHub/MyoBender/UnityStuff/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>

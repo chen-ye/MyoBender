@@ -91,7 +91,6 @@ function chargeEarth() {
 function fireWater() {
 	if (water) {
 		projectile.AddForce (transform.TransformDirection(Vector3.forward * waterVelocity * 100));
-		water = false;
 	}
 }
 

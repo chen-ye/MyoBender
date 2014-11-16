@@ -2,7 +2,11 @@ fileFormatVersion: 2
 guid: 375a7c5f2c01cf944bbe4d48f871f788
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - airProjectile: {instanceID: 0}
+  - fireProjectile: {fileID: 5400000, guid: 7fadd0e9d98a9784aac15678167f0187, type: 2}
+  - earthProjectile: {fileID: 5400000, guid: 082818fa127026a4992467daafea7de0, type: 2}
+  - waterProjectile: {fileID: 5400000, guid: c38efd8b19df6c049afb18059aca93fa, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

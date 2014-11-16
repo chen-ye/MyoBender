@@ -46,25 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Standard Assets\INativeWrapper.cs" />
-     <Compile Include="Assets\Standard Assets\NativeWrapper.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Data\PropertyChangedEventArgs.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\Appearance.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\AudioBeamFrameReference.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\BodyFrame.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\BodyFrameReference.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\BodyIndexFrameReader.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\ColorFrameReference.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\DepthFrame.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\DepthFrameReader.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\Expression.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\FrameCapturedEventArgs.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\InfraredFrameReader.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\JointType.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\Kinect\MultiSourceFrameArrivedEventArgs.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\KinectView\Scripts\BodySourceManager.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\KinectView\Scripts\DepthSourceManager.cs" />
-     <Compile Include="Assets\Standard Assets\Windows\KinectView\Scripts\DepthSourceView.cs" />
      <Compile Include="Assets\Standard Assets\CameraIntrinsics.cs" />
      <Compile Include="Assets\Standard Assets\CollectionMap.cs" />
      <Compile Include="Assets\Standard Assets\EventPump.cs" />
@@ -174,6 +155,7 @@
      <Compile Include="Assets\Standard Assets\Windows\KinectView\Scripts\InfraredSourceView.cs" />
      <Compile Include="Assets\Standard Assets\Windows\KinectView\Scripts\MultiSourceManager.cs" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Myo\README-MyoUnity.txt" />
      <None Include="Assets\Shaders\WaterElement.shader" />
      <None Include="Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
  <Reference Include="UnityEngine.UI">
