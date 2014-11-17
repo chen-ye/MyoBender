@@ -27,6 +27,8 @@ public class JointOrientation : MonoBehaviour
     // which they are active.
     private Pose _lastPose = Pose.Unknown;
 
+	public Transform pointer = null;
+
     // Update is called once per frame.
     void Update ()
     {
@@ -38,7 +40,7 @@ public class JointOrientation : MonoBehaviour
         if (thalmicMyo.pose != _lastPose) {
             _lastPose = thalmicMyo.pose;
 
-			if (thalmicMyo.pose == Pose.FingersSpread || thalmicMyo.pose == Pose.ThumbToPinky) {
+            if (thalmicMyo.pose == Pose.FingersSpread) {
                 updateReference = true;
             }
         }
@@ -53,7 +55,7 @@ public class JointOrientation : MonoBehaviour
             // vector of the rotation with Z = 1 when the wearer's arm is pointing in the reference direction.
             _antiYaw = Quaternion.FromToRotation (
                 new Vector3 (myo.transform.forward.x, 0, myo.transform.forward.z),
-                new Vector3 (0, 0, 1)
+				pointer.TransformDirection(Vector3.forward)
             );
 
             // _referenceRoll represents how many degrees the Myo armband is rotated clockwise
@@ -75,10 +77,6 @@ public class JointOrientation : MonoBehaviour
 
         // antiRoll represents a rotation about the myo Armband's forward axis adjusting for reference roll.
         Quaternion antiRoll = Quaternion.AngleAxis (relativeRoll, myo.transform.forward);
-
-		if (float.IsNaN (antiRoll.w + antiRoll.x + antiRoll.y + antiRoll.z)) {
-			return;
-		}
 
         // Here the anti-roll and yaw rotations are applied to the myo Armband's forward direction to yield
         // the orientation of the joint.
