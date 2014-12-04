@@ -37,7 +37,7 @@ public class SampleSceneGUI : MonoBehaviour
                 "Fist: Vibrate Myo armband\n" +
                 "Wave in: Set box material to blue\n" +
                 "Wave out: Set box material to green\n" +
-                "Thumb to pinky: Reset box material\n" +
+                "Double tap: Reset box material\n" +
                 "Fingers spread: Set forward direction"
             );
         }

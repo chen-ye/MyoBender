@@ -5,6 +5,7 @@ using Arm = Thalmic.Myo.Arm;
 using XDirection = Thalmic.Myo.XDirection;
 using VibrationType = Thalmic.Myo.VibrationType;
 using Pose = Thalmic.Myo.Pose;
+using UnlockType = Thalmic.Myo.UnlockType;
 
 // Represents a Myo armband. Myo's orientation is made available through transform.localRotation, and other properties
 // like the current pose are provided explicitly below. All spatial data about Myo is provided following Unity
@@ -13,6 +14,9 @@ public class ThalmicMyo : MonoBehaviour {
 
     // True if and only if Myo has detected that it is on an arm.
     public bool armSynced;
+
+    // Returns true if and only if Myo is unlocked.
+    public bool unlocked;
 
     // The current arm that Myo is being worn on. An arm of Unknown means that Myo is unable to detect the arm
     // (e.g. because it's not currently being worn).
@@ -45,6 +49,21 @@ public class ThalmicMyo : MonoBehaviour {
         _myo.Vibrate (type);
     }
 
+    // Cause the Myo to unlock with the provided type of unlock. e.g. UnlockType.Timed or UnlockType.Hold.
+    public void Unlock (UnlockType type) {
+        _myo.Unlock (type);
+    }
+
+    // Cause the Myo to re-lock immediately.
+    public void Lock () {
+        _myo.Lock ();
+    }
+
+    /// Notify the Myo that a user action was recognized.
+    public void NotifyUserAction () {
+        _myo.NotifyUserAction ();
+    }
+
     void Start() {
     }
 
@@ -63,6 +82,7 @@ public class ThalmicMyo : MonoBehaviour {
                 gyroscope = new Vector3(_myoGyroscope.Y, _myoGyroscope.Z, -_myoGyroscope.X);
             }
             pose = _myoPose;
+            unlocked = _myoUnlocked;
         }
     }
 
@@ -106,6 +126,18 @@ public class ThalmicMyo : MonoBehaviour {
         }
     }
 
+    void myo_OnUnlock(object sender, Thalmic.Myo.MyoEventArgs e) {
+        lock (_lock) {
+            _myoUnlocked = true;
+        }
+    }
+
+    void myo_OnLock(object sender, Thalmic.Myo.MyoEventArgs e) {
+        lock (_lock) {
+            _myoUnlocked = false;
+        }
+    }
+
     public Thalmic.Myo.Myo internalMyo {
         get { return _myo; }
         set {
@@ -116,6 +148,8 @@ public class ThalmicMyo : MonoBehaviour {
                 _myo.AccelerometerData -= myo_OnAccelerometerData;
                 _myo.GyroscopeData -= myo_OnGyroscopeData;
                 _myo.PoseChange -= myo_OnPoseChange;
+                _myo.Unlocked -= myo_OnUnlock;
+                _myo.Locked -= myo_OnLock;
             }
             _myo = value;
             if (value != null) {
@@ -125,6 +159,8 @@ public class ThalmicMyo : MonoBehaviour {
                 value.AccelerometerData += myo_OnAccelerometerData;
                 value.GyroscopeData += myo_OnGyroscopeData;
                 value.PoseChange += myo_OnPoseChange;
+                value.Unlocked += myo_OnUnlock;
+                value.Locked += myo_OnLock;
             }
         }
     }
@@ -138,6 +174,7 @@ public class ThalmicMyo : MonoBehaviour {
     private Thalmic.Myo.Vector3 _myoAccelerometer = null;
     private Thalmic.Myo.Vector3 _myoGyroscope = null;
     private Pose _myoPose = Pose.Unknown;
+    private bool _myoUnlocked = false;
 
     private Thalmic.Myo.Myo _myo;
 }

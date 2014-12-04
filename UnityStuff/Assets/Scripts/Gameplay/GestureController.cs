@@ -14,7 +14,7 @@ public enum Gesture {
 	FingersSpread,
 	WaveIn,
 	WaveOut,
-	ThumbToPinky,
+	DoubleTap,
 	None //Special case.  Don't use this in the Gesture Dictionary
 }
 

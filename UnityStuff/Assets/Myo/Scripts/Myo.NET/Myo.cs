@@ -37,6 +37,10 @@ namespace Thalmic.Myo
 
         public event EventHandler<RssiEventArgs> Rssi;
 
+        public event EventHandler<MyoEventArgs> Unlocked;
+
+        public event EventHandler<MyoEventArgs> Locked;
+
         internal Hub Hub
         {
             get { return _hub; }
@@ -55,6 +59,21 @@ namespace Thalmic.Myo
         public void RequestRssi()
         {
             libmyo.request_rssi(_handle, IntPtr.Zero);
+        }
+
+        public void Unlock(UnlockType type)
+        {
+            libmyo.myo_unlock(_handle, (libmyo.UnlockType)type, IntPtr.Zero);
+        }
+
+        public void Lock()
+        {
+            libmyo.myo_lock(_handle, IntPtr.Zero);
+        }
+
+        public void NotifyUserAction()
+        {
+            libmyo.myo_notify_user_action(_handle, libmyo.UserActionType.Single, IntPtr.Zero);
         }
 
         internal void HandleEvent(libmyo.EventType type, DateTime timestamp, IntPtr evt)
@@ -138,6 +157,18 @@ namespace Thalmic.Myo
                         Rssi(this, new RssiEventArgs(this, timestamp, rssi));
                     }
                     break;
+                case libmyo.EventType.Unlocked:
+                    if (Unlocked != null)
+                    {
+                        Unlocked(this, new MyoEventArgs(this, timestamp));
+                    }
+                    break;
+                case libmyo.EventType.Locked:
+                    if (Locked != null)
+                    {
+                        Locked(this, new MyoEventArgs(this, timestamp));
+                    }
+                    break;
             }
         }
     }
@@ -161,5 +192,11 @@ namespace Thalmic.Myo
         Short,
         Medium,
         Long
+    }
+
+    public enum UnlockType
+    {
+        Timed = 0,  ///< Unlock for a fixed period of time.
+        Hold = 1    ///< Unlock until explicitly told to re-lock.
     }
 }

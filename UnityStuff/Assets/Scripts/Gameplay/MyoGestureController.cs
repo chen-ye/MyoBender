@@ -16,7 +16,7 @@ public class MyoGestureController : MonoBehaviour {
 	{
 		Gesture.FingersSpread,
 		Gesture.Fist,
-		Gesture.ThumbToPinky,
+		Gesture.DoubleTap,
 		Gesture.WaveIn,
 		Gesture.WaveOut
 	};
@@ -25,7 +25,7 @@ public class MyoGestureController : MonoBehaviour {
 	{
 		{Pose.FingersSpread, Gesture.FingersSpread},
 		{Pose.Fist, Gesture.Fist},
-		{Pose.ThumbToPinky, Gesture.ThumbToPinky},
+		{Pose.DoubleTap, Gesture.DoubleTap},
 		{Pose.WaveIn, Gesture.WaveIn},
 		{Pose.WaveOut, Gesture.WaveOut},
 		{Pose.Rest, Gesture.None},
