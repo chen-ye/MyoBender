@@ -18,10 +18,87 @@ Platform assembly: D:\Chen Ye\Documents\GitHub\MyoBender\UnityStuff\Elastic_Data
 Loading D:\Chen Ye\Documents\GitHub\MyoBender\UnityStuff\Elastic_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: D:\Chen Ye\Documents\GitHub\MyoBender\UnityStuff\Elastic_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading D:\Chen Ye\Documents\GitHub\MyoBender\UnityStuff\Elastic_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.070 seconds
+- Completed reload, in  0.056 seconds
+desktop: 2560x1440 59Hz; virtual: 5120x1440 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-desktop: 2560x1440 32Hz; virtual: 3840x1440 at -1280,0
 Platform assembly: D:\Chen Ye\Documents\GitHub\MyoBender\UnityStuff\Elastic_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Chen Ye\Documents\GitHub\MyoBender\UnityStuff\Elastic_Data\Managed\System.dll (this message is harmless)
 Platform assembly: D:\Chen Ye\Documents\GitHub\MyoBender\UnityStuff\Elastic_Data\Managed\Boo.Lang.dll (this message is harmless)
+Platform assembly: D:\Chen Ye\Documents\GitHub\MyoBender\UnityStuff\Elastic_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+force point enabled
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+force point enabled
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+firing water
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+force point enabled
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+firing water
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+firing water
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+force point enabled
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+force point enabled
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+firing water
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+force point enabled
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+firing water
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+force point enabled
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+firing water
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+firing water
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+force point enabled
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+force point enabled
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+firing water
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+firing water
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+force point enabled
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+

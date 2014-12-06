@@ -3,14 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-public class Combo : MonoBehaviour {
+public class Combo {
 
 	public GestureMeta[] sequence;
 	public GestureController gestureController;
 
 	private int currentIndex = 0; //moves along the array as buttons are pressed
 	
-	public float allowedTimeBetweenGestures = 0.3f; //tweak as needed
+	public float allowedTimeBetweenGestures = 2.3f; //tweak as needed
 	private float timeLastGesture;
 	private List<Limb> limbList;
 	
@@ -31,6 +31,8 @@ public class Combo : MonoBehaviour {
 				bool nextTriggered = false;
 				foreach (Limb limb in currentGesture.LimbList) {
 					if(gestureController.Gestures.ContainsKey(limb)) {
+						//Debug.Log(limb);
+						//Debug.Log(currentGesture.gesture);
 						if(gestureController.Gestures[limb][currentGesture.gesture]) {
 							nextTriggered = true;
 							break;

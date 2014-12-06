@@ -20,4 +20,8 @@ public class ForcePoint : MonoBehaviour {
 				collider.rigidbody.AddForce(forceDirection.normalized * pullForce * Time.fixedDeltaTime);
 		}
 	}
+
+	public void OnEnable() {
+		print ("force point enabled");
+	}
 }

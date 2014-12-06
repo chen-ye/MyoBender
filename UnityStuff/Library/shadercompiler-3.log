@@ -101,3 +101,7 @@ Cmd: compileSnippet
   api=1 type=1 insize=721 outsize=76 kw= ok=1
 Cmd: compileSnippet
   api=0 type=1 insize=952 outsize=222 kw= ok=1
+Unhandled exception: Readfile from pipe failed. GLE=The pipe has been ended.
+
+
+Quitting shader compiler process

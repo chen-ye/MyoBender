@@ -21,6 +21,10 @@ public enum Gesture {
 public struct GestureMeta {
 	public List<Limb> LimbList;
 	public Gesture gesture;
+	public GestureMeta(List<Limb> LimbList, Gesture gesture) {
+		this.LimbList = LimbList;
+		this.gesture = gesture;
+	}
 }
 
 public class GestureController : MonoBehaviour {

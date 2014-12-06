@@ -5,21 +5,13 @@ using System.Collections.Generic;
 using Pose = Thalmic.Myo.Pose;
 
 public class MyoGestureController : MonoBehaviour {
-	
-	public GestureController gestureController;
-	public Limb limb = Limb.LeftArm;
+
 	public GameObject myo = null;
+	public Limb limb;
+	public GestureController gestureController;
 
 	private ThalmicMyo thalmicMyo;
 	private Pose _lastPose = Pose.Unknown;
-	private List<Gesture> myoPoses = new List<Gesture>() 
-	{
-		Gesture.FingersSpread,
-		Gesture.Fist,
-		Gesture.DoubleTap,
-		Gesture.WaveIn,
-		Gesture.WaveOut
-	};
 
 	private Dictionary<Pose,Gesture> poseToGesture = new Dictionary<Pose,Gesture>() 
 	{
@@ -35,13 +27,18 @@ public class MyoGestureController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		thalmicMyo = myo.GetComponent<ThalmicMyo> ();
+		foreach (KeyValuePair<Pose,Gesture> kvp in poseToGesture) {
+			if(kvp.Value != Gesture.None) {
+				gestureController.Gestures[limb][kvp.Value] = false;
+			}
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (thalmicMyo.pose != _lastPose) {
 			_lastPose = thalmicMyo.pose;
-			print (thalmicMyo.name + " pose: " + thalmicMyo.pose); //Replace with diagnostic UI
+			//print (thalmicMyo.name + " pose: " + thalmicMyo.pose); //Replace with diagnostic UI
 
 			/* Thalmic Gestures are mutually exclusive.  So run through the poseToGesture dictionary and set everything which isn't currently active to false */
 			foreach (KeyValuePair<Pose,Gesture> kvp in poseToGesture) {
@@ -50,7 +47,7 @@ public class MyoGestureController : MonoBehaviour {
 				}
 			}
 
-			print (thalmicMyo.name + " gesture: " + poseToGesture[thalmicMyo.pose] + " - " + gestureController.Gestures[limb][poseToGesture[thalmicMyo.pose]]);
+			//print (thalmicMyo.name + " gesture: " + poseToGesture[thalmicMyo.pose] + " - " + gestureController.Gestures[limb][poseToGesture[thalmicMyo.pose]]);
 
 			/* Now call the LL Gesture event */
 			gestureController.fireLLGesture();
