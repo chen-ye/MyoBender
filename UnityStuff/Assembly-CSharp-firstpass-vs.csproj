@@ -46,6 +46,21 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugins\BehaviourMachine\Sample Scenes\4 - Controllers\4 - ThirdPerson (Mecanim + Scripting)\Crouch.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Sample Scenes\4 - Controllers\4 - ThirdPerson (Mecanim + Scripting)\Jump.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Sample Scenes\4 - Controllers\4 - ThirdPerson (Mecanim + Scripting)\Motion.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Sample Scenes\7 - Games\Roll-a-Ball\Move.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Sample Scenes\7 - Games\Roll-a-Ball\ProcessTrigger.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Sample Scenes\7 - Games\Roll-a-Ball\UpdateGUI.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Wrapper\ActionState.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Wrapper\AnyState.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Wrapper\BehaviourTree.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Wrapper\Blackboard.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Wrapper\EmptyState.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Wrapper\FsmBehaviour.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Wrapper\GlobalBlackboard.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Wrapper\MonoState.cs" />
+     <Compile Include="Assets\Plugins\BehaviourMachine\Wrapper\StateMachine.cs" />
      <Compile Include="Assets\Standard Assets\CameraIntrinsics.cs" />
      <Compile Include="Assets\Standard Assets\CollectionMap.cs" />
      <Compile Include="Assets\Standard Assets\ExceptionHelper.cs" />
@@ -80,9 +95,11 @@
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Plugins\BehaviourMachine\Readme!!!.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\Stealth\Shaders\ReflectiveDiffuseSpecTransp.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
@@ -91,8 +108,10 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Resources\OpenNI.ini.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBloom.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Resources\NiTE.ini.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
@@ -163,6 +182,9 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="BehaviourMachineRuntime">
+ <HintPath>D:/Chen Ye/Documents/GitHub/MyoBender/UnityStuff/Assets/Plugins/BehaviourMachine/BehaviourMachineRuntime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

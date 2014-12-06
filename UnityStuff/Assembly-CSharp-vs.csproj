@@ -46,6 +46,21 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Head Look Controller\Scripts\CursorHit.cs" />
+     <Compile Include="Assets\Head Look Controller\Scripts\HeadLookController.cs" />
+     <Compile Include="Assets\Head Look Controller\Scripts\HelpText.cs" />
+     <Compile Include="Assets\Head Look Controller\Scripts\OrbitCamera.cs" />
+     <Compile Include="Assets\Kinect\AvatarsDemo\PointMan\PointManController.cs" />
+     <Compile Include="Assets\Kinect\GesturesDemo\Scripts\GestureListener.cs" />
+     <Compile Include="Assets\Kinect\GesturesDemo\Scripts\PresentationScript.cs" />
+     <Compile Include="Assets\KinectScripts\AvatarController.cs" />
+     <Compile Include="Assets\KinectScripts\Extras\LoadMainLevel.cs" />
+     <Compile Include="Assets\KinectScripts\Extras\MouseControl.cs" />
+     <Compile Include="Assets\KinectScripts\Extras\SetSceneAvatars.cs" />
+     <Compile Include="Assets\KinectScripts\Extras\SimpleGestureListener.cs" />
+     <Compile Include="Assets\KinectScripts\KinectGestures.cs" />
+     <Compile Include="Assets\KinectScripts\KinectManager.cs" />
+     <Compile Include="Assets\KinectScripts\KinectWrapper.cs" />
      <Compile Include="Assets\Myo Samples\Scripts\ColorBoxByPose.cs" />
      <Compile Include="Assets\Myo Samples\Scripts\JointOrientation.cs" />
      <Compile Include="Assets\Myo Samples\Scripts\SampleSceneGUI.cs" />
@@ -84,15 +99,41 @@
      <Compile Include="Assets\Scripts\General Scripts\ActivateTrigger.cs" />
      <Compile Include="Assets\Scripts\MeshBuilder.cs" />
      <Compile Include="Assets\Scripts\OVRDetect.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\AlarmSystems\DoneAlarmLight.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\AlarmSystems\DoneCCTVPlayerDetection.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\AlarmSystems\DoneLaserBlinking.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\AlarmSystems\DoneLaserPlayerDetection.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\AlarmSystems\DoneLaserSwitchDeactivation.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\EnemyScripts\DoneEnemyAI.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\EnemyScripts\DoneEnemyAnimation.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\EnemyScripts\DoneEnemyShooting.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\EnemyScripts\DoneEnemySight.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\EnemyScripts\DoneWayPointGizmo.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\GameControllerScripts\DoneHashIDs.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\GameControllerScripts\DoneLastPlayerSighting.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\LevelDynamics\DoneCameraMovement.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\LevelDynamics\DoneDoorAnimation.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\LevelDynamics\DoneKeyPickup.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\LevelDynamics\DoneLiftDoorsTracking.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\LevelDynamics\DoneLiftTrigger.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\PlayerScripts\DonePlayerHealth.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\PlayerScripts\DonePlayerInventory.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\PlayerScripts\DonePlayerMovement.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\ScreenFaderScripts\DoneSceneFadeInOut.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\UnappliedScripts\DoneAnimatorSetup.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\UnappliedScripts\DoneTags.cs" />
+     <Compile Include="Assets\Stealth\Done\DoneScripts\UnappliedScripts\guiTextSet.cs" />
      <Compile Include="Assets\syncStatusManager.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Plugins\BehaviourMachine\Readme!!!.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\Stealth\Shaders\ReflectiveDiffuseSpecTransp.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
@@ -101,8 +142,10 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Resources\OpenNI.ini.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBloom.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Resources\NiTE.ini.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
@@ -176,6 +219,9 @@
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="BehaviourMachineRuntime">
+ <HintPath>D:/Chen Ye/Documents/GitHub/MyoBender/UnityStuff/Assets/Plugins/BehaviourMachine/BehaviourMachineRuntime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
