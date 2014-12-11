@@ -7715,6 +7715,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fc0374cc67d5d34fa8ef5789085d179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  resetAfterDeathTime: 5
+  deathClip: {fileID: 0}
+  anim: {fileID: 0}
+  playerMovement: {fileID: 0}
+  hash: {fileID: 0}
+  sceneFadeInOut: {fileID: 0}
+  lastPlayerSighting: {fileID: 0}
+  timer: 0
+  playerDead: 0
 --- !u!1 &462138409
 GameObject:
   m_ObjectHideFlags: 0
@@ -17494,8 +17504,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1001883312}
-  m_LocalRotation: {x: -.174198642, y: .312935114, z: .0585009381, w: .93182838}
-  m_LocalPosition: {x: -30.5217762, y: -5.73242188, z: -24.5219574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -11.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

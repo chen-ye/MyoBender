@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 using LockingPolicy = Thalmic.Myo.LockingPolicy;
@@ -31,7 +31,21 @@ public class JointOrientation : MonoBehaviour
     // so that actions are only performed upon making them rather than every frame during
     // which they are active.
     private Pose _lastPose = Pose.Unknown;
-
+    
+    private MyoGestureController controller;
+    
+    public void JointOrientation {
+        controller = this.GetComponent<MyoGestureController> ();
+        controller.OnMyoStatus += CheckDisable;
+    }
+    
+    private void CheckDisable (SyncStatus status) {
+        if (status == Unpaired) {
+            this.enabled = false;
+        } else {
+            this.enabled = true;
+        }
+    }
 
 
     // Update is called once per frame.
