@@ -34,13 +34,13 @@ public class JointOrientation : MonoBehaviour
     
     private MyoGestureController controller;
     
-    public void JointOrientation() {
-        controller = this.GetComponent<MyoGestureController> ();
+    public JointOrientation() {
+        controller = GetComponent<MyoGestureController> ();
         controller.OnMyoStatus += CheckDisable;
     }
     
     private void CheckDisable (SyncStatus status) {
-        if (status == Unpaired) {
+        if (status == SyncStatus.Unpaired) {
             this.enabled = false;
         } else {
             this.enabled = true;
