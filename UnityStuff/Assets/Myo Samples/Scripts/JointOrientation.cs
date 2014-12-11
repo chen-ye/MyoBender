@@ -34,7 +34,7 @@ public class JointOrientation : MonoBehaviour
     
     private MyoGestureController controller;
     
-    public void JointOrientation {
+    public void JointOrientation() {
         controller = this.GetComponent<MyoGestureController> ();
         controller.OnMyoStatus += CheckDisable;
     }
